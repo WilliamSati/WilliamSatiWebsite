@@ -1,0 +1,3 @@
+C:\Website\WilliamSatiWebsite\obj\Debug\WilliamSatiWebsite.njsprojAssemblyReference.cache
+C:\Website\WilliamSatiWebsite\obj\Debug\WilliamSatiWebsite.njsproj.CoreCompileInputs.cache
+C:\Website\WilliamSatiWebsite\bin\Microsoft.NodejsTools.WebRole.dll

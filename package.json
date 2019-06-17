@@ -1,0 +1,21 @@
+{
+  "name": "william-sati-website",
+  "version": "0.0.0",
+  "description": "WilliamSatiWebsite",
+  "main": "server.js",
+  "author": "William Sati",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "website",
+    "William",
+    "Sati"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jQuery": "^1.7.4"
+  }
+}

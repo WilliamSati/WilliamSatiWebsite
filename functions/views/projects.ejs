@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link href="/assets/header.css" rel="stylesheet" type="text/css" />
+
+	<style>
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+		div.a {
+			 text-align: center;
+		}
+		div.b{
+			text-align: left;
+		}
+		div.padding {
+			padding: 10px;
+		}
+		div.paddingLarge {
+			padding: 50px;		
+		}
+		
+
+		#hiddenDiv1{
+		display: none;
+		text-align: justify;
+		}
+
+		#hiddenDiv2{
+		display: none;
+		text-align: justify;
+		}
+		#hiddenDiv3{
+		display: none;
+		text-align: justify;
+		}
+		#hiddenDiv4{
+		display: none;
+		text-align: justify;
+		}
+
+		div.centeredAndJustified{
+		 text-align: justified;
+		 margin-left: 200px;
+		 margin-right: 200px;
+	}
+		
+
+	</style>
+</head>
+
+<body>
+
+
+	<% include navigation.ejs %>
+	
+	<div class="padding">
+	</div>
+	
+
+	<div class="a">
+
+	
+    
+		<projectTitle>First Response </projectTitle> <p></p>
+		<h2>Let's revolutionize the way paramedics navigate their city  </h2>     <p></p>
+   
+		<iframe width="600" height="400" allowfullscreen="allowfullscreen"
+			src="https://www.youtube.com/embed/enUvFSaLAJU?controls=1">
+		</iframe> <p></p>
+
+		
+		<button id="button1" data-text-swap="Hide"> More </button>
+
+		<div id="hiddenDiv1">
+		
+			<div class="centeredAndJustified">
+
+				 <h4>Right now, as of March 2019, paramedics in Ontario use a navigation system that DOESEN'T TELL THEM WHERE TO GO. 
+				 It gives them point A and point B and it's up to the paramedics to find their way. Only one paramedic
+				 in the car? Too bad, the paramedics are discouraged from using google maps or other mapping applications. Our application 
+				 is fast, simple and secure and always gives the paramedics the fastest way to get to their destination. Ontario can do better. 
+				 Let's revolutionize the way that paramedics navigate their city. </h4>
+			</div>
+		</div>
+
+
+		<p></p>
+		<p></p>
+		<div class="padding">
+		</div>
+
+		<projectTitle>Boat simulator </projectTitle> 
+
+		<p></p>
+
+		<iframe width="600" height="400" allowfullscreen="allowfullscreen"
+			src="https://www.youtube.com/embed/GRIwTppGgKU?controls=1">
+		</iframe> <p></p>
+
+		<button id="button2" data-text-swap="Hide"> More </button>
+		
+		<div id="hiddenDiv2">
+
+			<div class="centeredAndJustified">
+
+				<h4>A small end of year project for our computer organization course. Programmed entirely in C, this boat simulator follows 
+				realistic acceleration and deceleration and utilies a gyroscope to get user input.</h4>
+
+			</div>
+		</div>
+
+		<p></p>
+		<div class="padding">
+		</div>
+
+		<projectTitle>Verilog Dodge Block </projectTitle> 
+
+		<p></p>
+
+		<iframe width="600" height="400" allowfullscreen="allowfullscreen"
+			src="https://www.youtube.com/embed/E3FBOgJ9I-4?controls=1">
+		</iframe> <p></p>
+
+		<button id="button3" data-text-swap="Hide"> More </button>
+
+		<div id="hiddenDiv3">
+
+			<div class="centeredAndJustified">
+
+				<h4>Although this may not look like much, this game was programmed in verilog. This means that, unlike a regular computer program, I didn't use a
+				processor (computer) to handle instructions expressed by a programming language: this is a completely different kind of project.
+				What we did was use basic logic gates (and, or, not, etc.) to create basic hardware components such as registers, counters, multiplexers, etc. And then used those to create 
+				machines that took in inputs from the user and outputed fixed outputs determined by their wiring and their past states. These are called finite state
+				machines. Our finite state machine would, based off of it's previous state, alternate between drawing the falling blocks, drawing the player and checking 
+				for game legality. All in all this took a solid 1-2 months of work during the school year but was very satisfying in the end.</h4>
+
+			</div>
+		</div>
+
+		<p></p>
+		<div class="padding">
+		</div>
+
+		<projectTitle>Asteroid Shooter </projectTitle> 
+
+		<p></p>
+
+		<iframe width="600" height="400" allowfullscreen="allowfullscreen"
+			src="https://www.youtube.com/embed/JNg7ZtZAtX4?controls=1">
+		</iframe> <p></p>
+
+		<button id="button4" data-text-swap="Hide"> More </button>
+
+		<div id="hiddenDiv4">
+
+					<div class="centeredAndJustified">
+						<h4>This was a school project where the game mechanics were provided to us and we were tasked with creating an AI that 
+						could get the highest score. The AI relies on a linked list that keeps track of the dangerous asteroids and solves a quadratic equation to 
+						find future intersection points between the projectile and the asteroid to increase the space ship's accuracy. After improving the game past the
+						deadline, it scores 20th out of 191 students in the class. 
+						</h4>
+
+					</div>
+		</div>
+
+			<div class="paddingLarge">
+			</div>
+
+	</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<%# functions to be called %>
+
+<script> 
+var button1 = document.querySelectorAll("button")[0];
+var popup1 = document.getElementById("hiddenDiv1");
+
+button1.addEventListener('click', function() {
+  if (button1.getAttribute("data-text-swap") == button1.innerHTML) {
+    button1.innerHTML = button1.getAttribute("data-text-original");
+	popup1.style.display = "none";
+  } else {
+    button1.setAttribute("data-text-original", button1.innerHTML);
+    button1.innerHTML = button1.getAttribute("data-text-swap");
+	popup1.style.display = "block";
+
+  }
+}, false);
+
+var button2 = document.querySelectorAll("button")[1];
+var popup2 = document.getElementById("hiddenDiv2");
+
+button2.addEventListener('click', function() {
+  if (button2.getAttribute("data-text-swap") == button2.innerHTML) {
+    button2.innerHTML = button2.getAttribute("data-text-original");
+	popup2.style.display = "none";
+  } else {
+    button2.setAttribute("data-text-original", button2.innerHTML);
+    button2.innerHTML = button2.getAttribute("data-text-swap");
+	popup2.style.display = "block";
+
+  }
+}, false);
+
+var button3 = document.querySelectorAll("button")[2];
+var popup3 = document.getElementById("hiddenDiv3");
+
+button3.addEventListener('click', function() {
+  if (button3.getAttribute("data-text-swap") == button3.innerHTML) {
+    button3.innerHTML = button3.getAttribute("data-text-original");
+	popup3.style.display = "none";
+  } else {
+    button3.setAttribute("data-text-original", button3.innerHTML);
+    button3.innerHTML = button3.getAttribute("data-text-swap");
+	popup3.style.display = "block";
+
+  }
+}, false);
+
+var button4 = document.querySelectorAll("button")[3];
+var popup4 = document.getElementById("hiddenDiv4");
+
+button4.addEventListener('click', function() {
+  if (button4.getAttribute("data-text-swap") == button4.innerHTML) {
+    button4.innerHTML = button4.getAttribute("data-text-original");
+	popup4.style.display = "none";
+  } else {
+    button4.setAttribute("data-text-original", button4.innerHTML);
+    button4.innerHTML = button4.getAttribute("data-text-swap");
+	popup4.style.display = "block";
+
+  }
+}, false);
+</script>
