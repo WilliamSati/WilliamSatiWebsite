@@ -1,0 +1,14 @@
+.footer{
+  background-color:rgb(143,209,207);
+  height: 100px;
+  padding: 2%;
+}
+.logoContainer{
+  margin-left: 42.5%;
+}
+.logo{
+  height:50px;
+  width:50px;
+  display:inline;
+  padding: 10px;
+}

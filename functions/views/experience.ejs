@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- materializeCSS -->
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <!-- my own css files -->
+      <link href="assets/css/experience.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/sidenav.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
+    <!-- parallax -->
+      <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <!-- icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+
+		<a href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; color:black;"><i class="medium material-icons">menu</i></a>
+		<%- include sidenav.ejs %>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/groupfistbump.jpg">
+    </div>
+
+    <div class="pageTitleContainer">
+        <h1 class="pageTitle"><strong> Experience </strong></h1>
+    </div>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/alphacodinglogo3.png">
+    </div>
+
+    <div class="projectCard">
+      <div class="projectTitle">
+        <h4><strong>Course Content Developer, Alpha Coding (Jul & Aug, 2019) <strong><h4>
+      </div>
+      <div class="projectImageAndOutcomes">
+        <img class="projectImage dynamicImage" src="assets\images\alphaCodingPersonal3.jpg">
+
+        <div class="projectOutcomes">
+          <ol>
+            <li><p class="dynamicList">Created a full-length web design course and contributed to a python course. </p></li>
+            <li><p class="dynamicList"> Built content to help teach HTML, CSS, Javascript and the design process.</p></li>
+            <li><p class="dynamicList"> Built content to help teach variables, classes and various data-structures in python. </p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/aquatotsds1.jpg">
+    </div>
+
+    <div class="projectCard">
+      <div class="projectTitle">
+        <h4><strong> Deck Supervisor, Aqua-Tots Swim Schools (Jul & Aug, 2019) <strong><h4>
+      </div>
+      <div class="projectImageAndOutcomes">
+
+      <img class="projectImage dynamicImage" src="assets\images\aquatotsClose.jpg">
+
+
+        <div class="projectOutcomes">
+          <ol>
+            <li><p class="dynamicList"> Ensured the safety of children of ages 4 months and upwards in a pool environment.</p> </li>
+            <li><p class="dynamicList"> Maintained the pool and the facilities.</p></li>
+            <li><p class="dynamicList"> Interacted professionally with clients and staff to solve their problems.</p></li>
+            <li><p class="dynamicList"> Interacted with children to help teach and calm down those who were upset.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/coachOnLake.jpg">
+    </div>
+
+    <div class="projectCard">
+      <div class="projectTitle">
+        <h4><strong> Program Director, Youth Rowing Camp - Don Rowing Club (Jul & Aug, 2018) <strong><h4>
+      </div>
+      <div class="projectImageAndOutcomes">
+        <img class="projectImage dynamicImage" src="assets\images\rowingCoach2.jpg">
+
+        <div class="projectOutcomes">
+          <ol>
+            <li><p class="dynamicList"> Led and trained a team of 5 volunteers and 3 paid coaches</p> </li>
+            <li><p class="dynamicList"> Doubled the registration rate to the club's Junior Competitive Program. </p></li>
+            <li><p class="dynamicList"> Developed a schedule of camp activitites. </p></li>
+            <li><p class="dynamicList"> Ensured the safety of children of ages 13-18.</p></li>
+            <li><p class="dynamicList"> Maintained the facilities and the equipment.</p></li>
+            <li><p class="dynamicList"> Interacted professionally with clients, students and staff.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="height:100px;">
+    </div>
+
+
+		<%- include footer.ejs %>
+
+
+  </body>
+
+  <!-- my own javascript file -->
+    <script src="assets/javascript/experience.js"></script>
+
+</html>

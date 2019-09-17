@@ -1,0 +1,49 @@
+/*necessary for parallax to work*/
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+.pageTitleContainer{
+height:300px;
+}
+.cardContainer{
+	background-color: #64b5f6;
+}
+.cardBreaker{
+	height:100px;
+}
+.pageTitle{
+text-align: center;
+margin-top:150px;
+color:black;
+}
+
+.experienceCard{
+	height: 350px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	box-shadow: 10px 10px 6px -6px #000;
+}
+.experienceTitle{
+	margin-left: 10px;
+}
+.experienceImageAndOutcomes{
+	height: 200px;
+	margin-left: 20px;
+}
+
+.experienceImage{
+	float: left;
+	height: 245px;
+
+}
+.experienceOutcomes{
+	margin-left: 320px;
+}
+.experienceOutcomes li{
+	font-size: 20px;
+	line-height: 2.0;
+}

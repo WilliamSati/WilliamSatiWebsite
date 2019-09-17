@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- materializeCSS -->
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <!-- my own css files -->
+      <link href="assets/css/aboutme.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/sidenav.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
+    <!-- parallax -->
+      <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <!-- icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger" style="position: fixed; color:black;"><i class="medium material-icons">menu</i></a>
+    <%- include sidenav.ejs %>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/rowinglandscape2.jpg"></div>
+
+    <h1 class="pageTitle"><strong> About Me </strong></h1>
+
+    <div class="aboutMeSectionContainer">
+      <div class="aboutMeSection">
+
+        <img class="AboutMeSectionImageLeft dynamicImage" src="assets/images/rowing.jpg">
+
+        <div class="AboutMeSectionText">
+          <p> I am very competitive and passionate about becoming my best self at whatever I do. This picture is of me representing the canadian under 19 team at an international rowing competition.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutMeSectionContainer">
+      <div class="aboutMeSection">
+
+        <img class="AboutMeSectionImageRight dynamicImage" src="assets/images/bikingimage.jpg">
+
+        <div class="AboutMeSectionText">
+          <p> Although I've finished with rowing, I continue to stay active and love to challenge myself. This picture was taken after a 12 hour bike ride to Niagara Falls with my friend.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutMeSectionContainer">
+      <div class="aboutMeSection">
+
+        <img class="AboutMeSectionImageLeft dynamicImage" src="assets/images/logoclassasker.png">
+
+        <div class="AboutMeSectionText">
+          <p> My long term goal is to impact the world by building things that help people. This summer of 2019, I was pursuing my goal by creating a web app called
+            <a target="_blank" href="https://classasker.com/"> classasker.com</a> which aims to help give students the confidence to ask their questions in class. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutMeSectionContainer">
+      <div class="aboutMeSection">
+
+        <img class="AboutMeSectionImageRight dynamicImage" src="assets/images/campingpic.jpg">
+
+        <div class="AboutMeSectionText">
+          <p>To relax, I love spending an afternoon with loved ones out in nature. This picture is of my dad and my sister canoing together at
+          Algonquin park.</p>
+        </div>
+      </div>
+    </div>
+
+<%- include footer.ejs %>
+
+  </body>
+
+  <!-- my own javascript file -->
+    <script src="assets/javascript/aboutme.js"></script>
+
+</html>

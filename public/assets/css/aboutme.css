@@ -1,0 +1,30 @@
+
+/*necessary for parallax to work*/
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+.pageTitle{
+text-align: center;
+color:black;
+margin-top:5px;
+}
+.aboutMeSectionContainer:hover{
+	background-color:lightgrey;
+}
+.aboutMeSection{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.AboutMeSectionImageLeft{
+  float: left;
+  border-radius: 50%;
+}
+.AboutMeSectionImageRight{
+  float: right;
+  border-radius: 50%;
+}
+.AboutMeSectionText{
+	text-align:justify;
+}

@@ -1,0 +1,56 @@
+/*necessary for parallax to work*/
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+.pageTitleContainer{
+	height:300px;
+}
+.pageTitle{
+text-align: center;
+margin-top:150px;
+color:black;
+}
+
+.projectCard{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.projectTitle{
+	margin-left: 10px;
+}
+.projectImageAndOutcomes{
+	margin-left: 10px;
+}
+.projectCard:hover{
+}
+.projectImage{
+	float: left;
+	height:300px;
+	width:300px;
+	margin-left: 10px;
+	min-width: 200px;
+	min-height: 200px;
+
+}
+.projectDescription{
+	margin-top: -20px;
+}
+.projectOutcomes li{
+	list-style-type: square;
+	line-height: 1.6;
+}
+.myCarousel{
+	display: block;
+}
+.myCarouselItem iframe{
+	width: 400px;
+	height:300px;
+}
+#carouselDescription{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.projectTitle a:hover{
+	text-decoration: underline;
+}
