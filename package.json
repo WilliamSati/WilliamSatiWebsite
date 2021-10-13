@@ -2,10 +2,10 @@
   "name": "william-sati-website",
   "version": "0.0.0",
   "description": "WilliamSatiWebsite",
-  "main": "server.js",
+  "main": "index.js",
   "author": "William Sati",
   "scripts": {
-    "start": "node server.js"
+    "start": "node functions/index.js"
   },
   "keywords": [
     "website",

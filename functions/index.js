@@ -37,3 +37,10 @@ app.get('/:somethingElse', function (req, res) {
 });
 
 exports.app = functions.https.onRequest(app);
+
+//uncomment when running locally
+/*
+app.listen(3000, function() {
+    console.log("Server is running on port " + 3000);
+});
+*/
