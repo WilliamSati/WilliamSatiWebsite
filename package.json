@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "firebase-admin": "^8.7.0",
     "jQuery": "^1.7.4"
   }
