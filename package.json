@@ -16,7 +16,7 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "firebase-admin": "^8.7.0",
+    "firebase-admin": "^11.4.1",
     "jQuery": "^1.7.4"
   }
 }
